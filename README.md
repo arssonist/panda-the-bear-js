@@ -62,26 +62,50 @@ $('.profile-image').attr('src', "http://hdwallpapershdpics.com/wp-content/upload
 
 9. Find a way to select the round icons in the sidebar and then change their colour.
 
+- $(".action-icon-bg").css("background-color", "black");
+
 10. Scroll down to the contact form.  Change the placeholder attribute of the name field to "identify yourself".
+
+- $('#name').attr('placeholder', 'identify yourself');
 
 11. Change the placeholder attribute of the message field to "state your business".
 
+- $('#message').attr('placeholder', 'state your business');
+
 12. Give the name field [a "value" attribute](http://www.w3schools.com/tags/att_input_value.asp) of "your nemesis".
+
+- $('#name').attr('value', 'your nemesis');
 
 13. Change the value attribute of the email field to "koalathebear@gmail.com".
 
+- $('#email').attr('value', 'koalathebear@gmail.com');
+
 14. Change the value of the submit button on the contact form to "En garde!".
+
+- ('#submit').attr('value', 'en gaurde');
 
   Bonus points: try experimenting with both the attr() function and the val() function to find different ways of doing this.
 
 15. We should stop Koala from sending an email to Panda that they might regret!  Find a way to disable the submit button (hint: familiarize yourself with the [disabled attribute](http://www.w3schools.com/tags/att_input_disabled.asp)).
 
+$("input").prop('disabled', true);
+
+- $("submit").prop('disabled', true);
+
+
 16. We should help Panda protect their privacy by clearing their personal details from the sidebar.  You can use [empty()](https://api.jquery.com/empty/) to do this.
 
+- $('.bio-info').empty();
 
 ### Adding Elements to the DOM
 
 17. That drawing of Pikachu is really cute.  Let’s duplicate it using [clone()](https://api.jquery.com/clone/) and insert it at the bottom of the page using [insertAfter()](http://api.jquery.com/insertafter/) or [appendTo()](http://api.jquery.com/appendto/).
+
+<!-- $( ".hello" ).clone().appendTo( ".goodbye" ); -->
+
+- $( "#right-image" ).clone().appendTo('input[type="submit"]');
+
+- $( "#right-image" ).clone().appendTo( "form" );
 
 18. Wow, that was so satisfying I think we should do it 10 more times.  Use a `for` loop to help you do this.
 
