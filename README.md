@@ -46,11 +46,19 @@ $('.profile-image').attr('src', "http://hdwallpapershdpics.com/wp-content/upload
 
 5. Panda the Bear is lying about their skills!  Take the "time travel" skill off the page to satisfy your personal sense of justice.  Use your googling and docs-skimming skillz to find a jQuery function that will allow you to remove elements from the DOM.  (hint: there are multiple ways of doing this, but the [parent()](http://api.jquery.com/parent/) function might be useful when it comes to selecting the right element)
 
+- $('#time-travel').parent().remove();
+
 6. Change the colour of the body. (hint: use [css()](http://api.jquery.com/css/))
+
+- $('body').css({color:"blue"});
 
 7. Change the colour used by the `highlight` class.
 
+- $('.highlight').css({color:"pink"});
+
 8. Change the font family of the h1 to 'monospace'.
+
+- $(".highlight").css('font-family','monospace');
 
 9. Find a way to select the round icons in the sidebar and then change their colour.
 
