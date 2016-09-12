@@ -20,7 +20,16 @@ You should be comfortable selecting elements by tag name (eg. 'h1'), class name 
 
 1. Select the element that contains the profile image (hint: look for the class).  Change the `src` attribute so it points to a picture of your choosing instead (hint: use [attr()](http://api.jquery.com/attr/)).
 
+
   PROTIP: use the inspector to learn the dimensions of the current profile image and use a placeholder image service such as [Place Kitten](https://placekitten.com/) to get an image of the same size.
+
+option one-   
+
+$('.profile-image').attr('src', 'http://placekitten.com/400/400');
+
+option two-
+
+$('.profile-image').attr('src', "http://hdwallpapershdpics.com/wp-content/uploads/2016/09/images-22.jpg").css({height:'400px', width:'400px'})
 
 2. Use the same approach to select the element that contains the photo of the sky and change the `src` attribute to another picture URL of your choosing.
 
