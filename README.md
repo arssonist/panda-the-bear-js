@@ -33,6 +33,9 @@ $('.profile-image').attr('src', "http://hdwallpapershdpics.com/wp-content/upload
 
 2. Use the same approach to select the element that contains the photo of the sky and change the `src` attribute to another picture URL of your choosing.
 
+- $("#left-image img").attr('src', 'http://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg').css({height:'200px', width:'200px'});
+[<img src=​"http:​/​/​www.gettyimages.pt/​gi-resources/​images/​Homepage/​Hero/​PT/​PT_hero_42_153645159.jpg" alt=​"Man Walking on Ice" title=​"Man Walking on Ice">​]
+
 3. Select the heading that says "Panda the Bear" and change it to your own name. (hint: use [text()](http://api.jquery.com/text/))
 
 4. Select the heading that says "Employment" and change it to something else. (hint: use a [descendant selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors))
