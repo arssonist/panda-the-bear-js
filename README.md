@@ -109,6 +109,9 @@ $("input").prop('disabled', true);
 
 18. Wow, that was so satisfying I think we should do it 10 more times.  Use a `for` loop to help you do this.
 
+
+- for (var i=0; i < 10; i++) { $( "#right-image" ).clone().appendTo( "form" )};
+
 19. Let’s add a message about when the page was last updated.  We'll do this by appending a new `<li>` element to the `<ul>` in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).  
 
   ![screenshot of final effect](panda-last-updated.png)
